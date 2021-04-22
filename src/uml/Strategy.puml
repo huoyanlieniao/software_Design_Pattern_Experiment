@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/class-diagram
+class SorterSystem{
+-SorterStrategy SorterSystem
++setSort(SorterStrategy SorterSystem)
++sort()
+}
+interface SorterStrategy{
++sort:(int arr[])
+}
+class BubbleSort
+class QuickSort
+class MergeSort
+class HeapSort
+
+SorterSystem-->SorterStrategy
+BubbleSort--|>SorterStrategy
+QuickSort--|>SorterStrategy
+MergeSort--|>SorterStrategy
+HeapSort--|>SorterStrategy
+@enduml

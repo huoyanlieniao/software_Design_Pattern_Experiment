@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Text{
+-Arraylist<String> name
++Command:command
++click()
++undo()
+}
+class Edit{
+-Arraylist<String> name
++Command command
++click()
++undo()
+}
+interface Command{
++abstract execute():void
++abstract get():String
+}
+class Undo
+class Opencommand
+class Createcommand
+class Copycommand
+class Pastecommand
+
+class BoardScreen{
++open()
++create()
++copy()
++paste()
+}
+
+Text-->Command
+Edit-->Command
+Opencommand--|>Command
+Createcommand--|>Command
+Copycommand--|>Command
+Pastecommand--|>Command
+Undo--|>Command
+
+Opencommand-->BoardScreen
+Copycommand-->BoardScreen
+Createcommand-->BoardScreen
+Pastecommand->BoardScreen
+
+@enduml
