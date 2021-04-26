@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface stock{
++addOwner()
++delOwner()
++noticeOwner()
+}
+interface owner{
++update()
+}
+class specificStock{
+
+}
+class specificOwner{
++stock:stock
+}
+
+specificOwner..|>owner
+specificOwner.up[hidden].>owner
+
+specificStock..|>stock
+specificStock.up[hidden].>stock
+
+stock.left[hidden].>owner
+stock..>owner
+
+specificOwner-->stock
+
+specificOwner-up[hidden]->stock
+
+
+
+@enduml
