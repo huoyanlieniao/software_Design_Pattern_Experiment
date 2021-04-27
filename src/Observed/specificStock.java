@@ -1,5 +1,6 @@
 package Observed;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 /**
@@ -75,14 +76,20 @@ public class specificStock implements stock{
             //价格数据小于两个的时候，波动不变
            return false;
         }else {
-            int a=price.get(price.size());
-            int b=price.get(price.size()-1);
-            double c=(a-b)/a;
-            System.out.println("价格波动为"+c);
-            if(c>0.05){
-                System.out.println("价格波动超过5%");
+            int a=price.get(price.size()-1);
+            int b=price.get(price.size()-2);
+            if(b==0){
+                System.out.println("价格上涨"+a);
                 return true;
+                } else{
+                double c=(float) (a-b) / (float) b;
+                System.out.println("价格波动为"+c);
+                if(c>0.05){
+                    System.out.println("价格波动超过5%");
+                    return true;
+                }
             }
+
 
         }
         return false;

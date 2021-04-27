@@ -20,25 +20,11 @@ public class main {
 
 
         //修改股票数据
-        specificStock1.setPrice(2);
-        specificStock1.noticeOwner();
-        specificStock1.setPrice(5);
-        specificStock1.noticeOwner();
-        specificStock1.setPrice(20);
-        specificStock1.noticeOwner();
-        specificStock1.setPrice(25);
-        specificStock1.noticeOwner();
 
-        specificStock2.setPrice(2);
-        specificStock1.noticeOwner();
-        specificStock2.setPrice(5);
-        specificStock1.noticeOwner();
-        specificStock2.setPrice(20);
-        specificStock1.noticeOwner();
-        specificStock2.setPrice(25);
-        specificStock1.noticeOwner();
-
-
+        for (int i = 0; i <100 ; i++) {
+            specificStock1.setPrice(i+i);
+            specificStock1.noticeOwner();
+        }
 
     }
 }
