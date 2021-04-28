@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+interface Ballif{
++radius：double
++calculateArea():double
++caclculateVolume():double
+}
+
+class Cube{
++width:double
++Cube(wideth:double)
++caclculateVolume():double
++calculaFaceArea():double
+}
+
+class MagucFinger{
++radius:double
++adaptee:Cube
++MagucFinger(adaptee:Cube)
++caclculateVolume():double
++calculateArea:double
+}
+
+MagucFinger..|>Ballif
+MagucFinger-->Cube
+
+@enduml
