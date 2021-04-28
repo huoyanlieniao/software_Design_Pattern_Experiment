@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+interface Country{
++setUnitedNations(un:UnitedNations)
++declare(message:String)
++getMessage(message:String)
+}
+
+interface UnitedNations{
++declare(message:String,country:Country)
++addCountry(country:Country)
+}
+
+Country-->UnitedNations
+Country-left[hidden]->UnitedNations
+
+class China
+class America
+
+China--|>Country
+America--|>Country
+China-up[hidden]->Country
+America-up[hidden]->Country
+
+
+class WTO
+WTO--|>UnitedNations
+WTO-up[hidden]->UnitedNations
+
+WTO-->China
+WTO-->America
+WTO-right[hidden]->China
+
+
+
+
+
+
+
+
+
+@enduml
