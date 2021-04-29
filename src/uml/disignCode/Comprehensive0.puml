@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract dataShow{
+ -dataGet:dataGet
+ +setdataGet(dataGet:dataGet):void
+ +dataShow(s:String):void
+
+}
+
+class dataShow1
+class dataShow2
+dataShow1--|>dataShow
+dataShow2--|>dataShow
+
+
+interface dataGet
+class data_File
+class data_Database
+class data_Excel
+
+data_File--|>dataGet
+data_Database--|>dataGet
+data_Excel--|>dataGet
+
+dataShow "0..1" o--> "0..*"dataGet
+
+class ExecelApi
+class Adapter
+Adapter-->ExecelApi
+data_Excel-->Adapter
+
+
+
+
+
+@enduml
