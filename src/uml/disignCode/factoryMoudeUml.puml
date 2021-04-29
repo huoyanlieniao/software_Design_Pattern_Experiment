@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Log{
++writeLog(s:String):void
+}
+
+class FileLog
+class DatabaseLog
+
+FileLog--|>Log
+DatabaseLog--|>Log
+
+
+interface LogFactory{
++createLog():Log
+}
+
+class FileLogFactory
+class DatabaseLogFactory
+
+FileLogFactory--|>LogFactory
+FileLogFactory-up[hidden]->LogFactory
+DatabaseLogFactory--|>LogFactory
+DatabaseLogFactory-up[hidden]->LogFactory
+
+
+FileLogFactory..>FileLog:create
+DatabaseLogFactory..>DatabaseLog:create
+@enduml
