@@ -24,14 +24,18 @@
 #### 2.分析
 
 - 命令模式包含四种角色：命令接口、具体命令、请求者、接收者
+
 - 根据命令模式的四种角色分析认为：
   - 命令接口：Command
   - 具体命令：Copycommand、OpenCommand、CreateCommand、PasteCommand、Undo
   - 请求者：Text、Edit
   - 接收者：BoardScreen
+  
 - 根据分析画出初步的Uml图：
 
-![](.\commandModeUml-0.png)
+  ![](.\src\uml\disignPicture\commandModeUml-0.png)
+
+  
 
 #### 3.实现
 
@@ -62,7 +66,7 @@
 
 #### 5.最终类图
 
-![](.\Package Command.png)
+![](.\src\uml\resultPicture\Package Command.png)
 
 
 
