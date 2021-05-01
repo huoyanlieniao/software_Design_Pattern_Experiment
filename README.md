@@ -33,7 +33,7 @@
   
 - 根据分析画出初步的Uml图：
 
-  ![](.\src\uml\disignPicture\commandModeUml-0.png)
+  ![](./src/uml/disignPicture/commandModeUml-0.png)
 
   
 
@@ -66,7 +66,7 @@
 
 #### 5.最终类图
 
-![](.\src\uml\resultPicture\Package Command.png)
+![](./src/uml/resultPicture/Package Command.png)
 
 
 
@@ -96,7 +96,7 @@
 
 - 根据分析画出类图：
 
-  - ![](.\src\uml\disignPicture\strategyModeUml-0.png)
+  - ![](./src/uml/disignPicture/strategyModeUml-0.png)
 
    
 
@@ -136,7 +136,7 @@
 
 #### 5.最终类图
 
-![](.\src\uml\resultPicture\Package Strategy.png)
+![](./src/uml/resultPicture/Package Strategy.png)
 
 
 
