@@ -11,6 +11,7 @@ package Medium;
 public interface UnitedNations {
    public abstract void declare(String message,String country);
    public void addCountry(Country country);
+   public String getName();
 
 
 }

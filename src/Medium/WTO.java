@@ -13,9 +13,11 @@ import java.util.ArrayList;
 public class WTO implements UnitedNations{
 
     ArrayList<Country> arrayList;
+    String name;
 
     WTO(){
         this.arrayList=new ArrayList<>();
+        this.name="WTO";
     }
 
 
@@ -35,5 +37,10 @@ public class WTO implements UnitedNations{
         if(!arrayList.contains(country)){
             arrayList.add(country);
         }
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

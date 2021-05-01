@@ -16,8 +16,8 @@ public class main {
         china.setUn(unitedNations);
         ameirca.setUn(unitedNations);
 
-        china.declare("你好",ameirca.getName());
-        ameirca.declare("hello",china.getName());
+        china.declare("你好","WTO",ameirca.getName());
+        ameirca.declare("hello","WTO",china.getName());
 
 
     }

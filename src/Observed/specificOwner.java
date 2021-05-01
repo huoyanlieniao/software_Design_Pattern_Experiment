@@ -1,5 +1,7 @@
 package Observed;
 
+import java.util.ArrayList;
+
 /**
  * @author sun
  * @title: specificOwner
@@ -10,20 +12,30 @@ package Observed;
  */
 public class specificOwner implements owner{
     //数据
-    stock stock;
+    ArrayList<stock> stocks=new ArrayList<>();
     String name;
 
     specificOwner(String s,stock stock){
-        name=s;
-        this.stock=stock;
-        this.stock.addOwner(this);//将当前实例添加到引用的具体股票的拥有者
+       this.name=s;
+       stock so;
+       stocks.add(stock);
+       for(int i=0;i<stocks.size();i++){
+           so=stocks.get(i);
+           if(so.equals(stock)){
+               so.addOwner(this);
+               stocks.set(i,so);
+           }
+       }
+
+        stock.addOwner(this);
+       //将当前实例添加到引用的具体股票的拥有者
 
     }
 
 
-
     @Override
     public void hearDate(String hear) {
+
         System.out.println("持有的股票波动超过5%");
     }
 }

@@ -1,5 +1,7 @@
 package Medium;
 
+import java.util.ArrayList;
+
 /**
  * @author sun
  * @title: China
@@ -11,6 +13,7 @@ package Medium;
 public class China implements Country{
 
     public String name="";
+    public ArrayList<UnitedNations> arrayList=new ArrayList<>();
     public UnitedNations unitedNations;
 
     China(){
@@ -30,12 +33,19 @@ public class China implements Country{
     public void setUn(UnitedNations un) {
          this.unitedNations=  un;
          this.unitedNations.addCountry(this);
+         this.arrayList.add(unitedNations);
     }
 
     @Override
-    public void declare(String message,String countryname) {
-        System.out.println(this.name+"传递"+message);
-        unitedNations.declare(message,countryname);
+    public void declare(String message,String Un,String countryname) {
+        System.out.println(this.name+"通过"+Un+"传递"+message+"给"+countryname);
+        for(UnitedNations guo:arrayList){
+            if(guo.getName().equals(Un)){
+                guo.declare(message,countryname);
+                break;
+            }
+        }
+
     }
 
 

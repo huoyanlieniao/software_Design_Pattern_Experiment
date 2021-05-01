@@ -14,7 +14,7 @@ public class main {
         System.out.println(sh);
         sh=proxy.Show(sh);
         System.out.println(sh);
-        if(sh.equals("出演")){
+        if("出演".equals(sh)){
             chou chou=new substitute();
             System.out.println(chou.show());
             ConcreteDecotator chou1 = new ConcreteDecotator(chou);

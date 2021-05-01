@@ -13,7 +13,7 @@ public interface Country {
     public void setName(String name);
     public String getName();
     public void setUn(UnitedNations un);
-    public void declare(String message,String name);
+    public void declare(String message,String Un,String name);
     public void getMessage(String message);
 
 }
