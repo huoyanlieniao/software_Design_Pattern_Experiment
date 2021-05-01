@@ -76,6 +76,8 @@
 
 ### 二、策略模式
 
+#### 声明：这里的排序是有实际代码
+
 #### 1.题目
 
 用策略模式设计一个排序系统（Sorter System），客户端可以动态地决定采用冒泡排序（Bubble Sort）、快速排序（Quick Sort）、归并排序（Merge Sort)、堆排序（Heap Sort）。
@@ -84,4 +86,59 @@
 
 #### 2.分析
 
-1. 策略模式具有三个角色：策略、具体策略、上下文
+- 策略模式具有三个角色：策略、具体策略、上下文
+
+- 根据题目：
+
+  - 策略：SorterStrategy
+  - 具体策略：BubbleSort、QuickSort、MergeSort、HeapSort
+  - 上下文：SorterSystem
+
+- 根据分析画出类图：
+
+  - ![](.\src\uml\disignPicture\strategyModeUml-0.png)
+
+   
+
+
+
+
+
+#### 3.实现
+
+- SorterStrategy:接口类，只有一个sort()排序方法
+
+- 具体策略:
+
+  - BubbleSort:  <a href="https://blog.csdn.net/qq_41679818/article/details/90296399">冒泡引用</a>
+  - QuickSort:  <a href="https://www.cnblogs.com/captainad/p/10999697.html">快排引用</a>
+  - MergeSort: <a href="https://www.cnblogs.com/of-fanruice/p/7678801.html">归并引用</a>
+  - HeapSort：<a href="https://www.cnblogs.com/luomeng/p/10618709.html">堆排序引用</a>
+  
+- 上下文：具有一个接口类，一个设定具体策略的方法，一个得到排序结果的方法。
+
+
+
+#### 4.体会
+
+ 策略模式，将实现和使用解耦，后期增删都很方便，但是需要用户知道所有的策略。感觉和命令模式很相像。
+
+ 与命令模式做对比：
+
+- 相同点
+  - 都是封装，用户不需要知道具体的实现细节。
+  - 调用接口，进行解耦
+- 不同点
+  - 针对不同目标：命令模式解决不同问题，策略模式解决一个问题的不同方法
+  - 命令模式有一个执行者，如果将接收者和具体命令进行结合个人感觉和策略模式的实现方式一样。
+
+
+
+#### 5.最终类图
+
+![](.\src\uml\resultPicture\Package Strategy.png)
+
+
+
+
+

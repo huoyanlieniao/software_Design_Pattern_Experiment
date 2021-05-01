@@ -1,5 +1,7 @@
 package Strategy;
 
+import java.util.ArrayList;
+
 /**
  * @ProjectName: software_Design_Pattern_Experiment
  * @Package: Strategy
@@ -14,8 +16,8 @@ public class SortSystem {
     public void setSorterStrategy(SorterStrategy sorterStrategy){
         this.sorterStrategy=sorterStrategy;
     }
-    public void get(){
-        sorterStrategy.sort();
+    public void get(ArrayList<Integer> arrayList){
+        sorterStrategy.sort(arrayList);
     }
 
 }

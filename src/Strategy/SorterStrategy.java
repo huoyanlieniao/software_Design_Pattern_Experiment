@@ -1,5 +1,7 @@
 package Strategy;
 
+import java.util.ArrayList;
+
 /**
  * @ProjectName: software_Design_Pattern_Experiment
  * @Package: Strategy
@@ -10,5 +12,5 @@ package Strategy;
  * @Version: 1.0
  */
 public interface SorterStrategy {
-    public void sort();
+    public void sort(ArrayList<Integer> arrayList);
 }
