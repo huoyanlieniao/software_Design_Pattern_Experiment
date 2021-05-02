@@ -8,7 +8,9 @@ package Comprehensive0;
  * @version: 1.0
  */
 public class Adapter {
+    ExecelApi execelApi=new ExecelApi();
     public void trans(){
+        execelApi.getData();
         System.out.println("api数据转化");
     }
 

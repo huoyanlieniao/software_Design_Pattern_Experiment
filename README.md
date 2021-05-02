@@ -66,7 +66,7 @@
 
 #### 5.最终类图
 
-![](./src/uml/resultPicture/Package Command.png)
+![](./src/uml/resultPicture/Package_Command.png)
 
 
 
@@ -136,7 +136,7 @@
 
 #### 5.最终类图
 
-![](./src/uml/resultPicture/Package Strategy.png)
+![](./src/uml/resultPicture/Package_Strategy.png)
 
 
 
@@ -174,7 +174,7 @@
 
 ####  5.最终类图
 
- ![](./src/uml/resultPicture/Package Observed.png)
+ ![](./src/uml/resultPicture/Package_Observed.png)
 
 
 
@@ -216,7 +216,7 @@
 
 #### 5.最终类图
 
-![](./src/uml/resultPicture/Package Medium.png)
+![](./src/uml/resultPicture/Package_Medium.png)
 
 
 
@@ -249,7 +249,7 @@
 
 ####  5.最终类图
 
-![适配器最终类图](./src/uml/resultPicture/Package Adapter.png)
+![适配器最终类图](./src/uml/resultPicture/Package_Adapter.png)
 
 
 
@@ -286,7 +286,7 @@
 
 #### 5.最终类图
 
-![](./src/uml/resultPicture/Package Factory.png)
+![](./src/uml/resultPicture/Package_Factory.png)
 
 
 
@@ -333,7 +333,7 @@
 
 #### 5.最终类图
 
-![](./src/uml/resultPicture/Package Comprehensive0.png)
+![](./src/uml/resultPicture/Package_Comprehensive0.png)
 
 
 
@@ -371,7 +371,7 @@
 
 #### 5.最终类图
 
-![](I:\onedriver\OneDrive - TSCN\代码\github\software_Design_Pattern_Experiment\software_Design_Pattern_Experiment\src\uml\resultPicture\Package Comprehensive1.png)
+![](I:\onedriver\OneDrive - TSCN\代码\github\software_Design_Pattern_Experiment\software_Design_Pattern_Experiment\src\uml\resultPicture\Package_Comprehensive1.png)
 
 
 
