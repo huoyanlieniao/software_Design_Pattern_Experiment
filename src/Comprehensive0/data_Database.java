@@ -8,12 +8,6 @@ package Comprehensive0;
  * @version: 1.0
  */
 public class data_Database implements dataGet{
-    private dataShow dataShow;
-
-    @Override
-    public void setGetDataWay(dataShow name) {
-        this.dataShow = name;
-    }
 
     @Override
     public void datashow(String name) {

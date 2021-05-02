@@ -7,9 +7,8 @@ package Comprehensive1;
  * @Description:
  * @version: 1.0
  */
-public abstract class Decorator {
+public abstract class Decorator extends Comprehensive1.chou {
     chou chou;
-    Decorator(){}
     public Decorator(chou chou){
         this.chou=chou;
     }

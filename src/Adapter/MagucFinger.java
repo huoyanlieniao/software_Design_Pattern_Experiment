@@ -23,7 +23,7 @@ public class MagucFinger implements Ballif{
 
     @Override
     public Double calculaterArea() {
-        return PI*radius*radius;
+        return 4*PI*radius*radius;
     }
 
     @Override

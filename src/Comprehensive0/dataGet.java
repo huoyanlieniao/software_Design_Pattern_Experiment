@@ -8,7 +8,6 @@ package Comprehensive0;
  * @version: 1.0
  */
 public interface dataGet {
-    public void setGetDataWay(dataShow name);
     public void datashow(String name);
 
 }

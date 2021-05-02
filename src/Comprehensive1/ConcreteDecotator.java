@@ -13,9 +13,11 @@ public class ConcreteDecotator extends Decorator{
       super(chou);
   }
 
-    public void show(){
+    @Override
+    public String show(){
         String s=chou.show()+xiu();
         System.out.println(s);
+        return s;
     }
 
     public String xiu(){

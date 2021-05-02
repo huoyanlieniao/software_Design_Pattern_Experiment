@@ -10,6 +10,6 @@ package Comprehensive0;
 public class ExecelApi {
 
     public void getData(){
-        System.out.println("通过Api调用数据");
+        System.out.println("通过Api获取数据");
     }
 }

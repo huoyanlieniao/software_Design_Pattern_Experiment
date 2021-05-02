@@ -9,7 +9,7 @@ package Comprehensive0;
  */
 public class main {
     public static void main(String[] args) {
-        dataGet dataGet=new data_File();
+        dataGet dataGet=new dataExecel();
         dataShow dataShow=new dataShow1();
 
         dataShow.setDataGet(dataGet);

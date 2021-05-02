@@ -8,13 +8,8 @@ package Comprehensive0;
  * @version: 1.0
  */
 public class dataExecel implements dataGet{
-    private dataShow dataShow;
     Adapter adapter=new Adapter();
 
-    @Override
-    public void setGetDataWay(dataShow name) {
-        this.dataShow = name;
-    }
 
     @Override
     public void datashow(String name) {

@@ -9,13 +9,6 @@ package Comprehensive0;
  */
 public class data_File implements dataGet{
 
-    private dataShow dataShow;
-
-    @Override
-    public void setGetDataWay(dataShow name) {
-        this.dataShow = name;
-    }
-
     @Override
     public void datashow(String name) {
         System.out.println("通过文件获取:"+name);

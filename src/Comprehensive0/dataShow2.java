@@ -11,6 +11,7 @@ public class dataShow2 extends dataShow{
 
     @Override
     public void dataShow(String s) {
+        dataGet.datashow(s);
         System.out.println("文件显示方式2："+s);
     }
 }
